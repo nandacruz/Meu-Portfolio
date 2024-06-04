@@ -1,0 +1,46 @@
+@media(max-width: 540px){
+    .titulo-principal{   
+        font-size: 22px;
+        
+        height: 70px;    
+    }
+
+    .home__container, .sobre__container, .skills__container{
+        padding: 16px;
+    }
+
+    .home__titulo_e_descricao p{
+        font-size: 14px;    
+    }
+
+    .home__links{       
+        gap: 8px;
+    }
+
+    .home__links a{
+        font-size: 14px;
+        gap: 0;
+    }
+
+    i{
+        padding: 4px;
+    }
+
+    .sobre__titulo_e_descricao h2{
+        font-size: 22px;
+    }
+
+    .sobre__titulo_e_descricao p{
+        font-size: 14px;
+    }
+
+    .sobre__citacao{
+        font-size: 16px;
+    }
+
+    .skills__cards{
+        justify-content: center;
+    }
+
+    
+}

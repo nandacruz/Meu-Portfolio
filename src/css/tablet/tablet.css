@@ -1,0 +1,40 @@
+@media (max-width: 768px){
+    .header__container{ 
+        
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 24px;       
+        height: 56px;
+    }
+    
+    
+    .menu__list{
+        display: none;
+    }
+
+    .menu__label{
+        display: flex;
+    }
+
+    span{
+        display: block;
+        font-size: 30px;
+        
+    }
+
+}
+
+
+
+@media (min-width: 600px) and (max-width: 768px){
+
+    .home__container, .sobre__container, .skills__container{
+        padding: 32px;
+    }
+
+    .titulo-principal{
+        font-size: 40px;
+    }
+
+}

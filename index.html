@@ -5,57 +5,307 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/mobile/mobile.css">
+    <link rel="stylesheet" href="src/css/tablet/tablet.css">
+    <link rel="stylesheet" href="src/css/desktop/desktop.css">
+
+    <script src="https://kit.fontawesome.com/f7b479c8eb.js" crossorigin="anonymous"></script>
+
+    
+
     <title>Meu Portifólio</title>
 </head>
 <body>
-    <header>
+     <!--Cabeçalho-->
+    <header class="header">
 
-        <nav class="">
-            <div class="">
-                Fernanda
+        <nav class="header__container">
+            <div class="header__logo">
+                <i class="fa-solid fa-cat"></i>
             </div>
-            <div class="">
-               <ul>
-                    <li><a href="/">Sobre</a></li>
-                    <li><a href="/">Skills</a></li>
-                    <li><a href="/">Hobbies</a></li>
-                    <li><a href="/">Formação</a></li>
-                    <li><a href="/">Projetos</a></li>
-               </ul>
-            </div>
-        </nav>
-        <!--Cabeçalho-->
-        <!--Logo com nome-->
-        <!--Menu Principal-->
-        <!--Título e Descrição-->
-        <!--Foto de perfil-->
-        <!--Links-->
+            <div class="menu__container">
 
+                <label for="menu" class="menu__label"><span><i class="fa-solid fa-bars"></i></span></i></label> 
+                <ul class="menu__list">                    
+                    <li><a class="menu__item" href="/">Sobre</a></li>
+                    <li><a class="menu__item" href="/">Skills</a></li>
+                    <li><a class="menu__item" href="/">Hobbies</a></li>
+                    <li><a class="menu__item" href="/">Formação</a></li>
+                    <li><a class="menu__item" href="/">Projetos</a></li>                    
+                </ul>
+            </div>
+        </nav>    
+       
     </header>
 
-    <main>
+    <main>    
+        
+        <!--Home-->
+        <section class="home">
+            <div class="home__container">
+                 <!--Título e Descrição-->
+                <div class="home__titulo_e_descricao">
+                    <h1 class="titulo-principal">Hello!, meu nome é Fernanda e sou uma Desenvolvedora Web! </h1>
+                    <p>Seja muito bem vindo ao meu portfólio, um pedacinho desse "pequeno universo" da internet dedicado a apresentar minhas skills ancestrais! , fique a vontade para transitar entre as informações.</p>
+                    <p class="text-small">( só não faça bagunça, ok? )</p>
+                </div> 
+                <!--Links-->
+                <div class="home__links">
+                    <a href="http://">Github<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="http://">Linkedin<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="http://">Currículo<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="http://">Email<i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <!--Foto de perfil-->               
+                <!--Assinatura, alguma imagem-->
 
-        <section>
+            </div>
+           
+        </section>
+        <!--Sobre Mim-->
+        <section class="sobre">
+            <div class="sobre__container">
+                <div class="sobre__titulo_e_descricao">
+                    <h2>Sobre</h2>                    
+                    <p>
+                        Gosto front, Ux e IU. Estudo tecnologia desde 2016 e busco constantemente me aperfeiçoar em novas tecnologias. Tudo que envolve cores, acessibilidade e componentes visuais me empolga!
+                        Atualmente estou me aperfeiçoando em Next/React e aplicando nos meu projetos pessoais/faculdade. Tenho formação em Técnico em Informática e estou cursando Bacharelado em Tecnologia da Informação.
+                    </p> 
+                    <p>Já trabalhei com manuntenção e suporte de computadores e prototipação de pequenos projetos, além de atendimento ao cliente.</p>
+                    <blockquote class="sobre__citacao">" Tecnologia também é arte "</blockquote>
+                </div>
+            </div>            
+        </section>
+
+        <!--Skills-->
+        <section class="skills">
+            <div class="skills__container">
+
+
+                <h2>Skills</h2>
+                <div class="skills__cards">
+                    <div class="skills__cards__card">                        
+                        <i class="fa-brands fa-html5"></i>
+                        <h3 class="card__title">Html</h3>
+                    </div>
+
+                    <div class="skills__cards__card">                        
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h3 class="card__title">Css</h3>
+                    </div>
+
+                    <div class="skills__cards__card">                        
+                        <i class="fa-brands fa-js"></i>
+                        <h3 class="card__title">Js</h3>
+                    </div>
+
+                    <div class="skills__cards__card">                        
+                        <i class="fa-brands fa-php"></i>
+                        <h3 class="card__title">Php</h3>
+                    </div>
+
+                    <div class="skills__cards__card">                        
+                        <i class="fa-solid fa-c"></i>
+                        <h3 class="card__title">C#</h3>
+                    </div>
+
+                    <div class="skills__cards__card">                        
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <h3 class="card__title">Bootstrap</h3>
+                    </div>
+
+                    <div class="skills__cards__card">                        
+                        <i class="fa-brands fa-react"></i>
+                        <h3 class="card__title">React</h3>
+                    </div>
+
+                    <div class="skills__cards__card">                        
+                        <i class="fa-brands fa-react"></i>
+                        <h3 class="card__title">Next</h3>
+                    </div>
+
+                    <div class="skills__cards__card">                        
+                        <i class="fa-brands fa-figma"></i>
+                        <h3 class="card__title">Figma</h3>
+                    </div>
+                                     
+                </div>
+            </div>            
+        </section>
+
+        <!--Hobbies-->
+        <section class="hobbies">
+            <div class="skills__container">
+
+                <h2>Hobbies</h2>
+                <div class="skills__cards">
+
+                    <div class="skills__cards__card">                        
+                        <i class="fa-solid fa-icons"></i>
+                        <h3 class="card__title">Design</h3>
+                    </div>
+                    <div class="skills__cards__card">                        
+                        <i class="fa-solid fa-cubes-stacked"></i>
+                        <h3 class="card__title">Pixel Art</h3>
+                    </div>
+
+                    <div class="skills__cards__card">                        
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h3 class="card__title">Games</h3>
+                    </div>
+                    
+                    <div class="skills__cards__card">                        
+                        <i class="fa-regular fa-note-sticky"></i>
+                        <h3 class="card__title">Origami</h3>
+                    </div>
+
+                    <div class="skills__cards__card">                        
+                        <i class="fa-solid fa-palette"></i>
+                        <h3 class="card__title">Desenho</h3>
+                    </div>
+
+                    <div class="skills__cards__card">                        
+                        <i class="fa-solid fa-book"></i>
+                        <h3 class="card__title">Leitura</h3>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <section class="education">
+            <!--Formações-->
+            <div class="education__container">
+                <h2>Formação</h2>
+                <div class="skills__cards">
+
+                    <div class="skills__cards__card">                        
+                        <h3 class="card__title">Bacharelado em Tecnologia da Informação</h3>
+                        <p>Univesp</p>
+                        <p>Em andamento - 2025</p>
+                    </div>    
+
+                    <div class="skills__cards__card">                        
+                        <h3 class="card__title">Técnologo em Análise e Desenvolvimento de Sistemas</h3>
+                        <p>Fatec Praia Grande</p>
+                        <p>Incompleto - 2022</p>
+                    </div>    
+                    
+                    <div class="skills__cards__card">                        
+                        <h3 class="card__title">Técnico em Informática</h3>
+                        <p>Etec Adolpho Berezin</p>
+                        <p>Completo - 2017</p>
+                    </div>    
+
+                </div>
+            </div>    
             
-            <!--Sobre Mim-->
-            <!--Título e Descrição-->
-            <!--Assinatura, alguma imagem-->
-        </section>
+           
+            </div>            
+            
 
-        <section>
-            <!--Hobbies e Soft Skills-->
-            <!--Título e Cards com logos-->
-        </section>
-
-        <section>
-            <!--Formações + Cursos-->
-            <!--Título e Cards com logos-->
             <!--Obs: posso colocar descritivo de cada curso mais tarde-->
         </section>
 
-        <section>
-            <!--Experiência em programação-->
-            <!--Título, imagens dos projetos, links para repositorio-->
+        <section class="courses">
+            <!--Formações-->
+            <div class="courses__container">
+                <h2>Cursos</h2>
+                <div class="skills__cards">
+
+                    <div class="skills__cards__card">                        
+                        
+                        <div class="group">
+                            <h3 class="card__title">Trilha Front-End/React</h3> 
+                            <p>Alura Oracle One</p>
+                        </div>                       
+                       
+                        <p>Em andamento - 2024</p>
+                    </div> 
+                    <div class="skills__cards__card">  
+                        <div class="group">
+                            <h3 class="card__title">Ux Design</h3>
+                            <p>Google</p>
+                        </div>                      
+                        
+                        <p>Completo - 2023</p>
+                    </div>   
+
+                    <div class="skills__cards__card">   
+                        <div class="group">
+                            <h3 class="card__title">HTML5</h3>
+                            <p>HCode Treinamentos</p>
+                        </div>                
+                        <p>Completo - 2020</p>
+                    </div>  
+
+                    <div class="skills__cards__card">    
+                        <div class="group">
+                            <h3 class="card__title">Bootstrap</h3>
+                            <p>HCode Treinamentos</p>
+                        </div>   
+                        <p>Completo - 2020</p>
+                    </div> 
+
+                    <div class="skills__cards__card">   
+                        <div class="group">
+                            <h3 class="card__title">DataBase Foundations</h3>
+                            <p>Oracle</p>
+                        </div>                     
+                       
+                        <p>Completo - 2021</p>
+                    </div>                          
+
+                </div>
+            </div>    
+            
+           
+            </div>            
+            
+
+            <!--Obs: posso colocar descritivo de cada curso mais tarde-->
+        </section>
+
+        <section class="experience">
+            <div class="experience__container">
+                <h2>Experiência Profissional</h2>
+                <div class="experience__project">
+                   
+                    <img src="src/img/decodificador.png" alt="">
+                    
+                    <div class="description">
+                        <div class="title">
+                            <h3>Decodificador de Texto</h3>
+                            <p>Challenge Alura</p>
+                        </div>
+                        
+                        <div class="buttons">
+                            <button name="repositorio" onsubmit="">Repositório</button>
+                            <button name="ver_demo" onsubmit="">Ver demo</button> 
+                        </div>                        
+                    </div>                   
+                </div>
+
+                <div class="experience__project">                   
+                    
+                    
+                    <div class="description">
+                        <div class="title">
+                            <h3>AluraPlay</h3>
+                            <p>Projeto Alura</p>
+                        </div>
+                        
+                        <div class="buttons">
+                            <button name="repositorio" onsubmit="">Repositório</button>
+                            <button name="ver_demo" onsubmit="">Ver demo</button> 
+                        </div>                        
+                    </div>     
+                    
+                    <img src="src/img/aluraplay.png" alt="">
+                </div>
+                <!--Título, imagens dos projetos, links para repositorio-->
+
+            </div>
+            
         </section>
 
         <section>
@@ -66,11 +316,11 @@
     </main>
 
     <footer>
-
-        <!--Rodapé-->
-        <!--Desenvolvido por Fernanda-->
-        <!--Informações adicionais-->
-
+        <p>Desenvolvido por Fernanda</p>   
     </footer>
+
+    <script src="src/js/menu.js"></script>
+    <script src="src/js/animations/typewriter.js"></script>
+    
 </body>
 </html>
