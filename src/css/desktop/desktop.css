@@ -9,21 +9,20 @@
 
 }
 
-@media(max-width: 860px) {
-    /* .skills__cards{
-        justify-content: center;
-    }     */
-    
-}
+@media(max-width: 1260px){
 
-@media(max-width: 860px){
-    /* .sobre__container, .skills__container{
-        padding: 24px;
-    } */
-}
+    .experience__project img{
+        width: 100%;
+        height: auto;
+    }
 
-@media(max-width: 974px){
-   /*  .skills__cards{
-        justify-content: center;
-    } */
+    .experience__project{
+        justify-content: left;
+    }
+
+
+    .experience__container .experience__project:nth-of-type(2), 
+    .experience__container .experience__project:nth-of-type(4) {
+        flex-direction: column-reverse;
+    }
 }

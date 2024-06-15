@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="src/css/desktop/desktop.css">
 
     <script src="https://kit.fontawesome.com/f7b479c8eb.js" crossorigin="anonymous"></script>
-
+    <script defer src="src/js/app/app.js"></script>
     
 
-    <title>Meu Portifólio</title>
+    <title>Portfólio - Fernanda</title>
 </head>
 <body>
      <!--Cabeçalho-->
@@ -51,10 +51,10 @@
                 </div> 
                 <!--Links-->
                 <div class="home__links">
-                    <a href="http://">Github<i class="fa-solid fa-up-right-from-square"></i></a>
-                    <a href="http://">Linkedin<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/nandacruz">Github<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://www.linkedin.com/in/fernandadmc/">Linkedin<i class="fa-solid fa-up-right-from-square"></i></a>
                     <a href="http://">Currículo<i class="fa-solid fa-up-right-from-square"></i></a>
-                    <a href="http://">Email<i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="mailto: fernanda.moura.cruz98@gmail.com" >Email<i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
                 <!--Foto de perfil-->               
                 <!--Assinatura, alguma imagem-->
@@ -68,7 +68,7 @@
                 <div class="sobre__titulo_e_descricao">
                     <h2>Sobre</h2>                    
                     <p>
-                        Gosto front, Ux e IU. Estudo tecnologia desde 2016 e busco constantemente me aperfeiçoar em novas tecnologias. Tudo que envolve cores, acessibilidade e componentes visuais me empolga!
+                        Gosto front, Ux e IU. Estudo tecnologia desde 2016 e busco constantemente me aperfeiçoar. Tudo que envolve cores, acessibilidade e componentes visuais me empolga!
                         Atualmente estou me aperfeiçoando em Next/React e aplicando nos meu projetos pessoais/faculdade. Tenho formação em Técnico em Informática e estou cursando Bacharelado em Tecnologia da Informação.
                     </p> 
                     <p>Já trabalhei com manuntenção e suporte de computadores e prototipação de pequenos projetos, além de atendimento ao cliente.</p>
@@ -279,8 +279,8 @@
                         </div>
                         
                         <div class="buttons">
-                            <button name="repositorio" onsubmit="">Repositório</button>
-                            <button name="ver_demo" onsubmit="">Ver demo</button> 
+                            <a href="https://github.com/nandacruz/Desafio-Alura-Oracle-ONE" target="_blank"><button name="repositorio" onsubmit="">Repositório</button></a>
+                            <a href="https://nandacruz.github.io/Desafio-Alura-Oracle-ONE/" target="_blank"><button name="ver_demo" onsubmit="">Ver demo</button></a>
                         </div>                        
                     </div>                   
                 </div>
@@ -295,12 +295,51 @@
                         </div>
                         
                         <div class="buttons">
-                            <button name="repositorio" onsubmit="">Repositório</button>
-                            <button name="ver_demo" onsubmit="">Ver demo</button> 
+                            <a href="https://github.com/nandacruz/Alura-Play-" target="_blank"><button name="repositorio" onsubmit="">Repositório</button></a>
+                            <a href="https://nandacruz.github.io/Alura-Play-/" target="_blank"><button name="ver_demo" onsubmit="">Ver demo</button> </a>
                         </div>                        
                     </div>     
                     
                     <img src="src/img/aluraplay.png" alt="">
+                </div>
+
+                
+                <div class="experience__project">                   
+                    
+                    <img src="src/img/site_responsivo.png" alt="">
+
+                    <div class="description">
+                        <div class="title">
+                            <h3>Site Responsivo</h3>
+                            <p>HCode Treinamentos</p>
+                        </div>
+                        
+                        <div class="buttons">
+                            <a href="https://github.com/nandacruz/Projeto-Site-Responsivo" target="_blank"><button name="repositorio" onsubmit="">Repositório</button></a>
+                            <a href="https://nandacruz.github.io/Projeto-Site-Responsivo/" target="_blank"><button name="ver_demo" onsubmit="">Ver demo</button> </a>
+                        </div>                        
+                    </div>     
+                    
+                    
+                </div>
+
+                <div class="experience__project">                   
+                    
+                   
+
+                    <div class="description">
+                        <div class="title">
+                            <h3>Netflix</h3>
+                            <p>Digital Innovaion ONE</p>
+                        </div>
+                        
+                        <div class="buttons">
+                            <a href="https://github.com/nandacruz/Projeto-Clone-Netflix?tab=readme-ov-file" target="_blank"><button name="repositorio" onsubmit="">Repositório</button></a>
+                            <a href="https://nandacruz.github.io/Projeto-Clone-Netflix/" target="_blank"><button name="ver_demo" onsubmit="">Ver demo</button> </a>
+                        </div>                        
+                    </div>     
+                    
+                    <img src="src/img/netflix.png" alt="">
                 </div>
                 <!--Título, imagens dos projetos, links para repositorio-->
 
@@ -308,7 +347,30 @@
             
         </section>
 
-        <section>
+        <section class="contact">
+            <div class="contact__container"> 
+                <img src="src/img/Dayflow - Torso 1.svg" alt=""> 
+                <div class="contact__form">
+                    <h2>Contato</h2>
+                    <p>Desejar entrar em contato? Preencha o formulário abaixo e responderei o mais rápido possível, se quiser, pode também enviar uma mensagem através do meu <a href="https://www.linkedin.com/in/fernandadmc/">Linkedin</a> .</p>
+                    <form class="form" action="https://formsubmit.co/ajax/fernanda.moura.cruz98@gmail.com" method="post" data-form>
+                        <label for="nome"></label>
+                        <input type="text" id="nome" placeholder="Nome" required>
+
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Email" required>
+
+                        <label for="assunto"></label>
+                        <input type="text" id="assunto" placeholder="Assunto" required>
+
+                        <label for="descricao"></label>
+                        <textarea name="" id="descricao" placeholder="Descrição" required></textarea>
+
+                        <button type="submit" data-button>Enviar</button>
+                    </form>
+                </div>   
+            </div>
+            
             <!--Formulário de Contato-->
             <!--Nome, email, assunto e mensagem-->
         </section>
@@ -321,6 +383,7 @@
 
     <script src="src/js/menu.js"></script>
     <script src="src/js/animations/typewriter.js"></script>
+    
     
 </body>
 </html>

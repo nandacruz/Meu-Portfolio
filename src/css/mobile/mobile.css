@@ -1,13 +1,27 @@
 @media(max-width: 540px){
+
     .titulo-principal{   
-        font-size: 22px;
-        
+        font-size: 22px;        
         height: 70px;    
     }
 
-    .home__container, .sobre__container, .skills__container{
-        padding: 16px;
+    .home__container, .sobre__container, .skills__container, .education__container, .courses__container, .experience__container, .contact__container{
+        padding: 64px 16px 64px 16px;
     }
+
+    
+
+    
+
+   
+    .contact__container{
+        flex-direction: column;
+    }
+
+    .contact__container img{
+        display: none;
+    }
+
 
     .home__titulo_e_descricao p{
         font-size: 14px;    

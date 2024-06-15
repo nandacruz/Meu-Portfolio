@@ -43,6 +43,49 @@ p{
     line-height: 24px;
 }
 
+button{
+    border-radius: 3px;
+    transition:0.2s;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 80%;
+    
+}
+
+button:disabled{
+    cursor: not-allowed;
+    background-color: #222831;
+}
+
+
+input,textarea{
+    padding: 12px;
+    border-radius: 3px;
+    color: var(--text-black);
+}
+
+input,textarea{
+    border: none;
+    outline: none;
+    box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--text-black);
+}
+
+input:focus,textarea:focus{
+    border: 1px solid var(--background-light-purple);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: var(--black);
+}
+
+
 
 .header__container{
     display: flex;
@@ -83,7 +126,7 @@ p{
 .titulo-principal{
     /*max-width: 480px;*/
     text-align: center;
-    
+    /* height: 100px; */
     /*margin: 60px auto;*/
     font-family: "Fira Code", monospace;
     font-size: 52px;
@@ -215,10 +258,8 @@ p{
     display: flex;
     align-items: center; 
     /* display: grid;
-    grid-template-columns: repeat(6, 1fr); */
-    
+    grid-template-columns: repeat(6, 1fr); */    
     gap: 24px;
-
     flex-wrap: wrap;
 }
 
@@ -281,18 +322,19 @@ p{
     gap: 24px;
 }
 
-.education h2, .courses h2{
-    font-size: 32px;
+.education .skills__cards .skills__cards__card{
     
+    flex: 1;
+}
+
+.education h2, .courses h2{
+    font-size: 32px;    
 }
 
 .education h3{
     text-align: center;
 }
 
-.education .skills__cards{
-    flex-wrap: nowrap;
-}
 
 .education .skills__cards__card{
     flex-basis: 100%;
@@ -305,13 +347,17 @@ p{
     background-color: var(--background-black);
 }
 
+
+
+
 .courses .skills__cards__card{
     flex-direction: row;
     justify-content: space-between; 
     flex-basis: 100%;
     background-color: var(--black);
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-    height:130px;
+    min-height:130px;
+    padding: 24px;
 
     border-right: 5px solid var(--background-dark-purple);
     border-left: 5px solid var(--background-dark-purple);
@@ -387,4 +433,59 @@ p{
     gap: 24px;
    
 
+}
+
+.contact__container{
+    display: flex;    
+    gap: 12px;
+    padding: 64px 152px 64px 152px;  
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.contact__container h2{
+    font-size: 32px;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+    padding: 24px;
+}
+
+.contact__form textarea{
+    height: 120px;
+    resize: none;
+    overflow: scroll;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+.contact__container button{
+    background-color: var(--background-dark-purple);
+    padding: 12px;
+}
+
+.contact__container img{
+    background-color: rgba(0, 0, 0, 0.1);  
+    border-radius: 3px;  
+    
+    /* border-radius: 50%; */
+    
+}
+
+
+.success{
+    color: #615EFC;
+}
+
+.error{
+    color: tomato;
 }
