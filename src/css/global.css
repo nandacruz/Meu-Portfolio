@@ -273,8 +273,7 @@ footer{
     border-radius: 3px;
     padding: 24px;
     gap: 12px;
-    border: 1px solid var(--background-black);
-    
+    border: 1px solid var(--background-black);    
 
 }
 
