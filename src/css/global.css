@@ -20,6 +20,10 @@
     --background-light-purple: #7E8EF1;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     width: 100%;
     font-family: var(--main-font-family);
